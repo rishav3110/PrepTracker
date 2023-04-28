@@ -1,0 +1,87 @@
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background-color: #f2f2f2;
+  }
+  
+  h1 {
+	text-align: center;
+	margin-top: 40px;
+  }
+  
+  #progress-bar {
+	background-color: #fff;
+	border-radius: 10px;
+	height: 20px;
+	margin: 20px auto;
+	width: 80%;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+	overflow: hidden;
+  }
+  
+  #progress {
+	background-color: #3498db;
+	height: 100%;
+	width: 0%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+	transition: width 0.5s ease-in-out;
+  }
+  
+  #percentage {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	color: #555;
+  }
+  
+  li {
+	list-style-type: none;
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+  }
+  
+  input[type="checkbox"] {
+	margin-right: 20px;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	cursor: pointer;
+  }
+  
+  input[type="checkbox"]::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	transform-origin: center;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="checkbox"]:checked {
+	border-color: #3498db;
+	background-color: #3498db;
+  }
+  
+  input[type="checkbox"]:checked::before {
+	opacity: 1;
+	transform: translate(-50%, -50%) rotate(45deg);
+  }
+  

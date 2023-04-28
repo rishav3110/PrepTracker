@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Progress</title>
+    <link rel="stylesheet" type="text/css" href="scrip.css">
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body> <header>
+    <a href="#" class="logo"><img src="logo.png"></a> 
+    <h1 class="mainname">PREPARATION TRACKER</h1>
+    <nav class="topnav">
+        <a href="mainpage.html" >Home</a>
+        <a href="tracker.html" class="active">Topic Tracker</a>
+        <a href="pomodoro.html">Pomodoro</a>
+        <a href="#">Doubt</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="aboutus.html">About us</a>
+    </nav>
+  </header>
+    <h1>Semiconductors</h1>
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <p id="percentage">0%</p>
+    <ul id="task-list">
+      <li><input type="checkbox" onclick="updateProgress()">Energy band in Solids</li>
+      <li><input type="checkbox" onclick="updateProgress()">Semiconductors</li>
+      <li><input type="checkbox" onclick="updateProgress()">Diodes</li>
+      <li><input type="checkbox" onclick="updateProgress()">Rectifier</li>
+      <li><input type="checkbox" onclick="updateProgress()">Special purpose diodes</li>
+      <li><input type="checkbox" onclick="updateProgress()">Junction Transistors</li>
+      <li><input type="checkbox" onclick="updateProgress()">Logic Gates</li>
+
+    </ul>
+    <script src="scrip.js"></script>
+  </body>
+</html>
